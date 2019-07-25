@@ -7,7 +7,6 @@ const useDarkMode = () => {
   React.useEffect(() => {
     const body = document.body;
     darkMode ? body.classList.add('dark-mode') : body.classList.remove('dark-mode')
-    console.log(darkMode)
   }, [darkMode]);
 
   return [darkMode, setDarkMode];
